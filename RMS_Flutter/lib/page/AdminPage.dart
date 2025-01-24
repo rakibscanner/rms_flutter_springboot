@@ -63,16 +63,6 @@ class _AdminPageState extends State<AdminPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Text(
-              //   'Welcome, $userName!',
-              //   style: TextStyle(
-              //     fontSize: 26,
-              //     fontWeight: FontWeight.w600,
-              //     color: Colors.teal.shade800,
-              //   ),
-              //   textAlign: TextAlign.center,
-              // ),
-              // SizedBox(height: 20),
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 2,
@@ -144,15 +134,6 @@ class _AdminPageState extends State<AdminPage> {
                                 Settingspage()),
                           ),
                     ),
-
-                    // _buildDashboardCard(
-                    //   context,
-                    //   icon: Icons.settings,
-                    //   label: 'Settings',
-                    //   color: Colors.black54,
-                    //   onTap:
-                    //       () {}, // Provide an empty callback to satisfy the requirement
-                    // ),
                   ],
                 ),
               ),
