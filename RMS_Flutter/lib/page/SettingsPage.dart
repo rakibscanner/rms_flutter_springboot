@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rms_flutter/page/AboutPage.dart';
 import 'package:rms_flutter/page/AdminPage.dart';
-import 'package:rms_flutter/page/HelpSupportPage.dart';
-import 'package:rms_flutter/page/LanguagePage.dart';
-import 'package:rms_flutter/page/NotificationPage.dart';
-import 'package:rms_flutter/page/PrivacySecurityPage.dart';
-import 'package:rms_flutter/page/ThemPage.dart';
 import 'package:rms_flutter/page/UserPage.dart';
 import 'package:rms_flutter/page/UserProfilePage.dart';
 import 'package:rms_flutter/service/AuthService.dart';
@@ -87,10 +82,6 @@ class Settingspage extends StatelessWidget {
               subtitle: 'Manage notification preferences',
               color: Colors.orange,
               onTap: () {},
-              // onTap: () => Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const NotificationPage()),
-              // ),
             ),
             _buildSettingsCard(
               context,
@@ -99,10 +90,6 @@ class Settingspage extends StatelessWidget {
               subtitle: 'Customize app appearance',
               color: Colors.pink,
               onTap: () {},
-              // onTap: () => Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const ThemePage()),
-              // ),
             ),
             _buildSettingsCard(
               context,
@@ -111,10 +98,6 @@ class Settingspage extends StatelessWidget {
               subtitle: 'Adjust your privacy settings',
               color: Colors.teal,
               onTap: () {},
-              // onTap: () => Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const PrivacySecurityPage()),
-              // ),
             ),
             _buildSettingsCard(
               context,
@@ -123,10 +106,6 @@ class Settingspage extends StatelessWidget {
               subtitle: 'Choose your preferred language',
               color: Colors.purple,
               onTap: () {},
-              // onTap: () => Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const LanguagePage()),
-              // ),
             ),
             _buildSettingsCard(
               context,
@@ -134,11 +113,10 @@ class Settingspage extends StatelessWidget {
               title: 'About',
               subtitle: 'Learn more about this app',
               color: Colors.green,
-              onTap: () {},
-              // onTap: () => Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const AboutPage()),
-              // ),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const AboutPage()),
+              ),
             ),
             _buildSettingsCard(
               context,
@@ -147,10 +125,6 @@ class Settingspage extends StatelessWidget {
               subtitle: 'Get help or contact support',
               color: Colors.redAccent,
               onTap: () {},
-              // onTap: () => Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const HelpSupportPage()),
-              // ),
             ),
           ],
         ),
