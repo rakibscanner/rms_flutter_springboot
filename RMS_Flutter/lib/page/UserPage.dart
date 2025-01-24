@@ -51,28 +51,11 @@ class _UserPageState extends State<UserPage> {
         foregroundColor: Colors.white,
       ),
       body: Container(
-        // decoration: BoxDecoration(
-        //   gradient: LinearGradient(
-        //     colors: [Colors.blue.shade400, Colors.lightBlue.shade200],
-        //     begin: Alignment.topCenter,
-        //     end: Alignment.bottomCenter,
-        //   ),
-        // ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Text(
-              //   'Welcome, $userName!',
-              //   style: TextStyle(
-              //     fontSize: 26,
-              //     fontWeight: FontWeight.w600,
-              //     color: Colors.blue.shade900,
-              //   ),
-              //   textAlign: TextAlign.center,
-              // ),
-              // SizedBox(height: 20),
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 2,
