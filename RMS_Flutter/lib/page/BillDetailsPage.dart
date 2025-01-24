@@ -234,15 +234,6 @@ class _BillDetailsPageState extends State<BillDetailsPage> {
             children: [
               _buildSectionHeader('Bill Information', Icons.receipt),
               _buildBillInfo(),
-              const SizedBox(height: 16),
-              // _buildSectionHeader('Order Details', Icons.shopping_cart),
-              // _buildOrderDetails(),
-              const SizedBox(height: 16),
-              // _buildSectionHeader('User Details', Icons.person),
-              // _buildUserDetails(),
-              const SizedBox(height: 16),
-              // _buildSectionHeader('Admin Details', Icons.admin_panel_settings),
-              // _buildAdminDetails(),
             ],
           ),
         ),
@@ -275,42 +266,6 @@ class _BillDetailsPageState extends State<BillDetailsPage> {
           _buildDetailRow('Bill ID', _bill?.id?.toString() ?? 'N/A'),
           _buildDetailRow('Total Amount', '\$${_bill?.totalAmount?.toStringAsFixed(2) ?? '0.00'}'),
           _buildDetailRow('Status', _bill?.status?.toString() ?? 'Unknown'),
-          _buildDetailRow('Payment Method', _bill?.paymentMethod?.toString() ?? 'N/A'),
-          _buildDetailRow('Bill Date', _bill?.billDate?.toString() ?? 'N/A'),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildOrderDetails() {
-    if (_order == null) {
-      return const Text('No order details available.');
-    }
-    return _buildCard(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // _buildDetailRow('Order ID', _order?.id?.toString() ?? 'N/A'),
-          // _buildDetailRow('Total Price', '\$${_order?.totalPrice?.toStringAsFixed(2) ?? '0.00'}'),
-          // const SizedBox(height: 8),
-          // const Text('Items:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.pink)),
-          // const SizedBox(height: 8),
-          // ...?_order?.orderItems?.map((item) {
-          //   return Card(
-          //     elevation: 2,
-          //     margin: const EdgeInsets.symmetric(vertical: 8),
-          //     child: ListTile(
-          //       title: Text(item.food?.name?.toString() ?? 'Unknown'),
-          //       subtitle: Text(
-          //         'Quantity: ${item.quantity?.toString() ?? '0'}, Price: \$${item.food?.price?.toStringAsFixed(2) ?? '0.00'}',
-          //       ),
-          //       trailing: Text(
-          //         'Total: \$${((item.quantity ?? 0) * (item.food?.price ?? 0)).toStringAsFixed(2)}',
-          //         style: TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.w600, fontSize: 15),
-          //       ),
-          //     ),
-          //   );
-          // }).toList(),
         ],
       ),
     );
